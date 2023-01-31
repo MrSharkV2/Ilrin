@@ -126,7 +126,8 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ученикиTableAdapter.Update(database1DataSet);
+            Close();
+            myConnection.Close();
         }
 
         private void dataGridView1_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
