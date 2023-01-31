@@ -99,6 +99,7 @@ namespace WindowsFormsApp1
                 sql_comm.ExecuteNonQuery();
                 sql_conn.Close();
 
+
                 this.ученикиTableAdapter.Fill(this.database1DataSet.Ученики);
             }
         }
